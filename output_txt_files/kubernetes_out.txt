@@ -1,1 +1,5 @@
-<paste log output from Kubernetes-mediated prediction, here>
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/mlms-deployment created
+NAME                               READY   STATUS              RESTARTS   AGE
+mlms-deployment-5fd6fb85f4-826zs   0/1     ContainerCreating   0          0s
+service/mlms-service exposed
