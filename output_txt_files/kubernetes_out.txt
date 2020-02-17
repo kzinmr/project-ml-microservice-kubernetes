@@ -1,5 +1,14 @@
 kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
-deployment.apps/mlms-deployment created
-NAME                               READY   STATUS              RESTARTS   AGE
-mlms-deployment-5fd6fb85f4-826zs   0/1     ContainerCreating   0          0s
-service/mlms-service exposed
+Error from server (AlreadyExists): deployments.apps "mlms-deployment" already exists
+NAME                               READY   STATUS    RESTARTS   AGE
+mlms-deployment-5fd6fb85f4-2r7sq   1/1     Running   0          14s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}

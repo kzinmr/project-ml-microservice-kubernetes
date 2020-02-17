@@ -20,7 +20,8 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-service_name=mlms-service
-kubectl expose deployment $deployment_name --type=NodePort --name=$service_name
+# service_name=mlms-service
+# kubectl expose deployment $deployment_name --type=NodePort --name=$service_name
+kubectl port-forward deployment/${deployment_name} 8000:80
 
 # minikube service $service_name --url
